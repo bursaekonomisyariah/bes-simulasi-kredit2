@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Simulasi Kredit Syariah (Penawaran)</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <a href="https://freeimage.host/"><img src="https://iili.io/H6JrifR.png" alt="H6JrifR.png" border="0" /></a>
+    </div>
+    <h1>Simulasi Kredit Syariah</h1>
+    <div class="form-group">
+      <label for="harga-barang">Harga Barang</label>
+      <input type="text" id="harga-barang" onkeyup="formatRupiah(this)">
+    </div>
+    <div class="form-group">
+      <label for="uang-muka">Uang Muka</label>
+      <input type="text" id="uang-muka" onkeyup="formatRupiah(this)">
+    </div>
+    <div class="form-group">
+      <label for="tenor">Tenor (bulan)</label>
+      <input type="number" id="tenor" max="24">
+    </div>
+    <button class="btn-calculate" onclick="calculate()">Hitung</button>
+    <div id="result" class="result"></div>
+    <div class="contact-us">
+      <h2>Hubungi Kami</h2>
+      <p>Jika Anda memiliki pertanyaan, silakan hubungi kami melalui WhatsApp:</p>
+      <a href="https://wa.me/6282195959512" target="_blank" class="whatsapp-link">Hubungi via WhatsApp</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
